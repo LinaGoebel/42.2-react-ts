@@ -1,137 +1,137 @@
 import "./styles.css";
 
 function Lesson06() {
-  // 1. Типизация строк
-  let userName: string = "Tom";
-  userName = "28";
-  userName = "";
-  let fullName: string = "${useName} Smith";
+//   // 1. Типизация строк
+//   let userName: string = "Tom";
+//   userName = "28";
+//   userName = "";
+//   let fullName: string = "${useName} Smith";
 
-  let result: string = "2";
-  result = 1 + 2 + "4";
-  console.log(result);
+//   let result: string = "2";
+//   result = 1 + 2 + "4";
+//   console.log(result);
 
-  //2. Типизация чисел
-  let luckyNumber: number = 7;
-  luckyNumber = NaN;
-  luckyNumber = Infinity;
-  luckyNumber = -8;
-  luckyNumber = 1.4;
-  //luckyNumber = 2 + '3';
-  console.log(luckyNumber);
+//   //2. Типизация чисел
+//   let luckyNumber: number = 7;
+//   luckyNumber = NaN;
+//   luckyNumber = Infinity;
+//   luckyNumber = -8;
+//   luckyNumber = 1.4;
+//   //luckyNumber = 2 + '3';
+//   console.log(luckyNumber);
 
-  //тип BigInt - bigint
+//   //тип BigInt - bigint
 
-  //3. Типизация логического типа
-  let isAdmin: boolean = true;
-  isAdmin = false;
-  // isAdmin = undefined;
-  isAdmin = 2 > 1;
-  isAdmin = !!1;
-  console.log(isAdmin);
+//   //3. Типизация логического типа
+//   let isAdmin: boolean = true;
+//   isAdmin = false;
+//   // isAdmin = undefined;
+//   isAdmin = 2 > 1;
+//   isAdmin = !!1;
+//   console.log(isAdmin);
 
-  //4. null и undefined
-  let emptyValue: null = null;
-  // emptyValue = 0;
-  // emptyValue = undefined;
+//   //4. null и undefined
+//   let emptyValue: null = null;
+//   // emptyValue = 0;
+//   // emptyValue = undefined;
 
-  let data: undefined = undefined;
-  // data = 0;
-  // data = null;
+//   let data: undefined = undefined;
+//   // data = 0;
+//   // data = null;
 
-  //5.Типизация массива
-  const colors: string[] = ["red", "blue", "black"];
-  // colors.push(23);
-  colors.push("23");
-  // colors[0] = 345234;
-  colors[0] = "345234";
+//   //5.Типизация массива
+//   const colors: string[] = ["red", "blue", "black"];
+//   // colors.push(23);
+//   colors.push("23");
+//   // colors[0] = 345234;
+//   colors[0] = "345234";
 
-  //6. Кортеж (tupel)
-  const fruits: [string, number] = ["apple", 4];
-  fruits.push("cherry");
-  console.log(fruits);
-  // fruits[2]
+//   //6. Кортеж (tupel)
+//   const fruits: [string, number] = ["apple", 4];
+//   fruits.push("cherry");
+//   console.log(fruits);
+//   // fruits[2]
 
-  //7. Типизация возвращаемого функцией значения
-  const showMessage = (): void => {
-    console.log("Hello");
-  };
-  showMessage();
+//   //7. Типизация возвращаемого функцией значения
+//   const showMessage = (): void => {
+//     console.log("Hello");
+//   };
+//   showMessage();
 
-  const returnNumber = (): number => {
-    return 45;
-  };
+//   const returnNumber = (): number => {
+//     return 45;
+//   };
 
-  console.log(returnNumber());
+//   console.log(returnNumber());
 
-  //8. Автоматическое определение типа и any
-  let name = "Bob";
-  // name = 34;
+//   //8. Автоматическое определение типа и any
+//   let name = "Bob";
+//   // name = 34;
 
-  let userData;
-  userData = "Mary";
-  userData = 40;
-  userData = ["John", 56];
+//   let userData;
+//   userData = "Mary";
+//   userData = 40;
+//   userData = ["John", 56];
 
-  let age: any = 45;
-  age = "30";
+//   let age: any = 45;
+//   age = "30";
 
-  // console.log(a);
-  var a = 30;
+//   // console.log(a);
+//   var a = 30;
 
-  //9. Типизация параметров функций
-  const getUserData = (firstName: string, age: number = 30) => {
-    return `${firstName} ${age}`;
-  };
+//   //9. Типизация параметров функций
+//   const getUserData = (firstName: string, age: number = 30) => {
+//     return `${firstName} ${age}`;
+//   };
 
-  getUserData("Nick");
+//   getUserData("Nick");
 
-  // 10. Union type
-  let isManager: boolean | undefined | string = true;
-  isManager = undefined;
-  isManager = "yes";
+//   // 10. Union type
+//   let isManager: boolean | undefined | string = true;
+//   isManager = undefined;
+//   isManager = "yes";
 
-  // 11. Типизация объектов
-  interface User {
-    name: string;
-    age?: number | string;
-  }
+//   // 11. Типизация объектов
+//   interface User {
+//     name: string;
+//     age?: number | string;
+//   }
 
-  // const user: User = {
-  //   name: "Lola",
-  //   age: '34'
-  // }
+//   // const user: User = {
+//   //   name: "Lola",
+//   //   age: '34'
+//   // }
 
-  const user: User = {
-    name: "Lola",
-  };
+//   const user: User = {
+//     name: "Lola",
+//   };
 
-  //type
-  type Animal = {
-    name?: string;
-    // weight?: 100
-    weight?: number;
-  };
+//   //type
+//   type Animal = {
+//     name?: string;
+//     // weight?: 100
+//     weight?: number;
+//   };
 
-  const animal: Animal = {
-    weight: 200,
-    name: "Lion",
-  };
+//   const animal: Animal = {
+//     weight: 200,
+//     name: "Lion",
+//   };
 
-  console.log(animal);
+//   console.log(animal);
 
-  interface Zoo {
-    animalData: Animal;
-    city: string;
-  }
+//   interface Zoo {
+//     animalData: Animal;
+//     city: string;
+//   }
 
-  const zoo: Zoo = {
-    animalData: {
-      weight: 250,
-      name: "Horde",
-    },
-    city: "Berlin",
-  };
+//   const zoo: Zoo = {
+//     animalData: {
+//       weight: 250,
+//       name: "Horde",
+//     },
+//     city: "Berlin",
+//   };
 
   return <div className="lesson06-container">Lesson 6- Time Script</div>;
 }
