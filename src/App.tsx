@@ -1,9 +1,16 @@
-import './App.css';
+import "./App.css";
+
+//lessons
+import Lesson06 from "./lessons/Lesson06/Lesson06";
+
+//homeworks
+
+//comsultations
 
 function App() {
   return (
     <div className="App">
-      My React-TS project
+      <Lesson06 />
     </div>
   );
 }
