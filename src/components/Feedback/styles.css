@@ -1,22 +1,30 @@
 .feedback-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 30px;
+  width: 800px;
+  padding: 20px;
+  background-color: rgb(213, 247, 236);
 }
 
-.button-wrapper {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  transition: background-color 0.3s;
+.feedback-result-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.like-dislike-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
 }
 
 .result {
-  font-size: 24px;
+  min-width: 70px;
+  text-align: center;
+  font-size: 34px;
   font-weight: bold;
-  color: #181818;
+  color: rgb(9, 137, 95);
 }
