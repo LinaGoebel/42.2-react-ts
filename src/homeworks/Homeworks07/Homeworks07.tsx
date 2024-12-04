@@ -1,4 +1,4 @@
-import Button from "../../../components/Button/Button";
+import Button from "../../components/Button/Button";
 import { Homework07Container } from "./styles";
 
 function Homework07() {

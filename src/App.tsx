@@ -6,10 +6,11 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Lesson08 from "./lessons/Lesson08/Lesson08";
 
 //homeworks
-// import Homework07 from "./homeworks/Homeworks07/Homeworks07/Homeworks07";
+// import Homework07 from "./homeworks/Homeworks07/Homeworks07";
+import Homework08 from "./homeworks/Homework08/Homework08";
 
 //comsultations
-import Consultation04 from "./consultations/Consultation04/Consultation04";
+// import Consultation04 from "./consultations/Consultation04/Consultation04";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <Lesson07 /> */}
       {/* <Homework07 /> */}
       {/* <Lesson08 /> */}
-      <Consultation04 />
+      {/* <Consultation04 /> */}
+      <Homework08 />
     </>
   );
 }
