@@ -32,3 +32,11 @@ export const ResultBlock = styled.div`
     border: 1px solid #ccc;
   }
 `;
+
+export const StyledDogImage = styled.img`
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;

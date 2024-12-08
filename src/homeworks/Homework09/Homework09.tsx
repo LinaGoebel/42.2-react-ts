@@ -1,13 +1,18 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import axios from "axios";
 
-import { Homework09Container, FormWrapper, ResultBlock } from "./styles";
+import {
+  Homework09Container,
+  FormWrapper,
+  ResultBlock,
+  StyledDogImage,
+} from "./styles";
 import Input from "components/Input/Input";
 
 function Homework09() {
   const [firstNote, setFirstNote] = useState<string>("");
   const [secondNote, setSecondNote] = useState<string>("");
-  const [dogImage, setDogImage] = useState<string | undefined>("");
+  const [dogImage, setDogImage] = useState<string | undefined>(undefined);
 
   const firstNoteOnChange = (event: ChangeEvent<HTMLInputElement>) => {
     setFirstNote(event.target.value);
@@ -50,7 +55,9 @@ function Homework09() {
           onChange={secondNoteOnChange}
         />
       </FormWrapper>
-      <ResultBlock>{dogImage && <img src={dogImage} alt="" />}</ResultBlock>
+      <ResultBlock>
+        {dogImage && <StyledDogImage src={dogImage} alt="Random dog" />}
+      </ResultBlock>
     </Homework09Container>
   );
 }
