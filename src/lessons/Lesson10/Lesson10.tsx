@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import { FactsContainer, Lesson10Container } from "./styles";
 import Spinner from "components/Spinner/Spinner";
@@ -31,6 +32,7 @@ function Lesson10() {
   };
 
 
+  const renderedFacts = facts.map((fact) => <p key={uuidv4()}>{fact}</p>);
 
   return (
     <Lesson10Container>
@@ -46,15 +48,9 @@ function Lesson10() {
           />
         )}
       </div>
-      {loading && <Spinner />} 
-      {error && <p className="error">{error}</p>}{" "}
-      {facts.length > 0 && (
-        <FactsContainer>
-          {facts.map((fact, index) => (
-            <p key={index}>{fact}</p>
-          ))}
-        </FactsContainer>
-      )}
+      {loading && <Spinner />}
+      {error && <p className="error">{error}</p>}
+      {facts.length > 0 && <FactsContainer>{renderedFacts}</FactsContainer>}
     </Lesson10Container>
   );
 }
