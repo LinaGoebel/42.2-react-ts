@@ -1,6 +1,6 @@
 import "./styles.ts";
 import { InputProps } from "./types";
-import { InputContainer, Label, InputElement } from "./styles";
+import { InputContainer, Label, InputElement, ErrorMessage } from "./styles";
 
 function Input({
   name,
@@ -10,6 +10,7 @@ function Input({
   label,
   value,
   onChange,
+  error,
 }: InputProps) {
   return (
     <InputContainer>
@@ -24,6 +25,7 @@ function Input({
         placeholder={placeholder}
         className="input-element"
       />
+      <ErrorMessage>{error}</ErrorMessage>
     </InputContainer>
   );
 }

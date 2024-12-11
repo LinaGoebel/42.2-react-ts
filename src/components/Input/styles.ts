@@ -23,3 +23,9 @@ export const InputElement = styled.input`
     color: #a19f9f;
   }
 `;
+
+export const ErrorMessage = styled.div`
+  color: red;
+  font-size: 16px;
+  height: 18px;
+`;
