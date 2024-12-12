@@ -6,7 +6,7 @@ export interface InputProps {
   type?: "text" | "email" | "password" | "tel";
   placeholder?: string;
   label?: string;
-  value?: string;
+  value?: string | number;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   error?: string;
 }
