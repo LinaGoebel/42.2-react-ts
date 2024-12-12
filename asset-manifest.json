@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/linagoebel.github.io/42.2-react-ts/static/js/main.39039655.js",
-    "static/js/453.ed3810f9.chunk.js": "/linagoebel.github.io/42.2-react-ts/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/linagoebel.github.io/42.2-react-ts/index.html",
-    "main.39039655.js.map": "/linagoebel.github.io/42.2-react-ts/static/js/main.39039655.js.map",
-    "453.ed3810f9.chunk.js.map": "/linagoebel.github.io/42.2-react-ts/static/js/453.ed3810f9.chunk.js.map"
+    "main.js": "/42.2-react-ts/static/js/main.2adf5233.js",
+    "static/js/453.ed3810f9.chunk.js": "/42.2-react-ts/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/42.2-react-ts/index.html",
+    "main.2adf5233.js.map": "/42.2-react-ts/static/js/main.2adf5233.js.map",
+    "453.ed3810f9.chunk.js.map": "/42.2-react-ts/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.39039655.js"
+    "static/js/main.2adf5233.js"
   ]
 }
