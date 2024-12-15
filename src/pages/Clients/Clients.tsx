@@ -1,17 +1,17 @@
 import {
+  ClientsComponent,
   Footer,
   Header,
-  LayoutComponent,
   LogoContainer,
   Main,
   NavContainer,
   StyledNavLink,
-} from "./styles";
-import { LayoutProps } from "./types";
+} from "./style";
+import { ClientsProps } from "./types";
 
-function Layout({ children }: LayoutProps) {
+function Clients({ children }: ClientsProps) {
   return (
-    <LayoutComponent>
+    <ClientsComponent>
       <Header>
         <LogoContainer
           to="/"
@@ -36,7 +36,7 @@ function Layout({ children }: LayoutProps) {
               textDecoration: isActive ? "underline" : "none",
             })}
           >
-            About
+            About You
           </StyledNavLink>
           <StyledNavLink
             to="/users"
@@ -44,14 +44,22 @@ function Layout({ children }: LayoutProps) {
               textDecoration: isActive ? "underline" : "none",
             })}
           >
-            Users
+            Otto
+          </StyledNavLink>
+          <StyledNavLink
+            to="/users"
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "underline" : "none",
+            })}
+          >
+           Zalando
           </StyledNavLink>
         </NavContainer>
       </Header>
       <Main>{children}</Main>
       <Footer>Футер</Footer>
-    </LayoutComponent>
+    </ClientsComponent>
   );
 }
 
-export default Layout;
+export default Clients;

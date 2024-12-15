@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 
-export const LayoutComponent = styled.div`
+export const ClientsComponent = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
