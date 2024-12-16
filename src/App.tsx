@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// import Layout from "components/Layout/Layout";
+import Layout from "components/Layout/Layout";
 import GlobalStyles from "./styles/GlobalStyles";
-// import About from "pages/About/About";
-// import Home from "pages/Home/Home";
-// import Users from "pages/Users/Users";
-// import Logo from "pages/Logo/Logo";
+import About from "pages/About/About";
+import Home from "pages/Home/Home";
+import Users from "pages/Users/Users";
+import Logo from "pages/Logo/Logo";
 import AboutYou from "pages/Clients/componenets/AboutYou/AboutYou";
 import Otto from "pages/Clients/componenets/Otto/Otto";
 import Zalando from "pages/Clients/componenets/Zalando/Zalando";
@@ -32,20 +32,19 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      {/* <Layout> */}
-      <Clients>
+      <Layout>
         <Routes>
-          {/* <Route path="/" element={<Home />} />
+          <Route path="*" element="Page not found" />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/logo" element={<Logo />} /> */}
-          <Route path="/about-you" element={<AboutYou />} />
-          <Route path="/otto" element={<Otto />} />
-          <Route path="/zalando" element={<Zalando />} />
-          {/* <Route path="*" element="Page not found" /> */}
+          <Route path="/logo" element={<Logo />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/about-you" element={<AboutYou />} />
+          <Route path="/clients/otto" element={<Otto />} />
+          <Route path="/clients/zalando" element={<Zalando />} />
         </Routes>
-      </Clients>
-      {/* </Layout> */}
+      </Layout>
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Homework07 /> */}

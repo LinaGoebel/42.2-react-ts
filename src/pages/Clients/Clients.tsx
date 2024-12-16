@@ -1,37 +1,12 @@
-import {
-  ClientsComponent,
-  Footer,
-  Header,
-  LogoContainer,
-  Main,
-  NavContainer,
-  StyledNavLink,
-} from "./style";
-import { ClientsProps } from "./types";
+import { ClientsComponent, Header, NavContainer, StyledNavLink } from "./style";
 
-function Clients({ children }: ClientsProps) {
+function Clients() {
   return (
     <ClientsComponent>
       <Header>
-        <LogoContainer
-          to="/"
-          style={({ isActive }) => ({
-            transform: isActive ? "scale(0.9)" : "scale(1)",
-            backgroundColor: isActive ? "#e0e0e0" : "white",
-            transition: "all 0.3s ease",
-          })}
-        ></LogoContainer>
         <NavContainer>
           <StyledNavLink
-            to="/"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
-            })}
-          >
-            Home
-          </StyledNavLink>
-          <StyledNavLink
-            to="/about"
+            to="/clients/about-you"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
             })}
@@ -39,7 +14,7 @@ function Clients({ children }: ClientsProps) {
             About You
           </StyledNavLink>
           <StyledNavLink
-            to="/users"
+            to="/clients/otto"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
             })}
@@ -47,17 +22,15 @@ function Clients({ children }: ClientsProps) {
             Otto
           </StyledNavLink>
           <StyledNavLink
-            to="/users"
+            to="/clients/zalando"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
             })}
           >
-           Zalando
+            Zalando
           </StyledNavLink>
         </NavContainer>
       </Header>
-      <Main>{children}</Main>
-      <Footer>Футер</Footer>
     </ClientsComponent>
   );
 }
