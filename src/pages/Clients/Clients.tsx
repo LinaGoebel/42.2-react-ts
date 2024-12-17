@@ -1,34 +1,13 @@
-import { ClientsComponent, Header, NavContainer, StyledNavLink } from "./style";
+import { ClientsComponent, Header, NavContainer, StyledLink } from "./style";
 
 function Clients() {
   return (
     <ClientsComponent>
       <Header>
         <NavContainer>
-          <StyledNavLink
-            to="/clients/about-you"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
-            })}
-          >
-            About You
-          </StyledNavLink>
-          <StyledNavLink
-            to="/clients/otto"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
-            })}
-          >
-            Otto
-          </StyledNavLink>
-          <StyledNavLink
-            to="/clients/zalando"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
-            })}
-          >
-            Zalando
-          </StyledNavLink>
+          <StyledLink to="about-you">About You</StyledLink>
+          <StyledLink to="otto">Otto</StyledLink>
+          <StyledLink to="zalando">Zalando</StyledLink>
         </NavContainer>
       </Header>
     </ClientsComponent>

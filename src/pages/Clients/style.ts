@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const ClientsComponent = styled.div`
   display: flex;
@@ -22,8 +22,15 @@ export const NavContainer = styled.nav`
   gap: 15px;
 `;
 
-export const StyledNavLink = styled(NavLink)`
+export const StyledLink = styled(Link)`
   text-decoration: none;
-  font-size: 20px;
-  color: white;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    text-decoration: underline;
+  }
 `;
