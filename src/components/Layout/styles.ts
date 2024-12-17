@@ -17,11 +17,25 @@ export const Header = styled.header`
   color: white;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(NavLink)`
   width: 70px;
   height: 70px;
   background-color: white;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+  }
+
+  &.active {
+    transform: scale(0.9);
+    background-color: #e0e0e0;
+  }
 `;
 
 export const NavContainer = styled.nav`

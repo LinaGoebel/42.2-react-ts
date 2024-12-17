@@ -5,6 +5,11 @@ import GlobalStyles from "./styles/GlobalStyles";
 import About from "pages/About/About";
 import Home from "pages/Home/Home";
 import Users from "pages/Users/Users";
+import Logo from "pages/Logo/Logo";
+import AboutYou from "pages/Clients/componenets/AboutYou/AboutYou";
+import Otto from "pages/Clients/componenets/Otto/Otto";
+import Zalando from "pages/Clients/componenets/Zalando/Zalando";
+import Clients from "pages/Clients/Clients";
 
 //lessons
 // import Lesson06 from "./lessons/Lesson06/Lesson06";
@@ -29,10 +34,15 @@ function App() {
       <GlobalStyles />
       <Layout>
         <Routes>
+          <Route path="*" element="Page not found" />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
-          <Route path="*" element="Page not found" />
+          <Route path="/logo" element={<Logo />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/about-you" element={<AboutYou />} />
+          <Route path="/clients/otto" element={<Otto />} />
+          <Route path="/clients/zalando" element={<Zalando />} />
         </Routes>
       </Layout>
       {/* <Lesson06 /> */}
