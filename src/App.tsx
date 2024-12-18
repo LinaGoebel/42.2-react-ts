@@ -18,6 +18,7 @@ import Clients from "pages/Clients/Clients";
 // import Lesson09 from "lessons/Lesson09/Lesson09";
 // import Lesson10 from "lessons/Lesson10/Lesson10";
 // import Lesson11 from "lessons/Lesson11/Lesson11";
+import Lesson13 from "lessons/lesson13/Lesson13";
 
 //homeworks
 // import Homework07 from "./homeworks/Homeworks07/Homeworks07";
@@ -34,7 +35,6 @@ function App() {
       <GlobalStyles />
       <Layout>
         <Routes>
-          <Route path="*" element="Page not found" />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
@@ -43,6 +43,8 @@ function App() {
           <Route path="/clients/about-you" element={<AboutYou />} />
           <Route path="/clients/otto" element={<Otto />} />
           <Route path="/clients/zalando" element={<Zalando />} />
+          <Route path="/lesson13" element={<Lesson13 />} />
+          <Route path="*" element="Page not found" />
         </Routes>
       </Layout>
       {/* <Lesson06 /> */}
