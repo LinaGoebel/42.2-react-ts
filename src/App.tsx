@@ -25,6 +25,7 @@ import Lesson13 from "lessons/lesson13/Lesson13";
 // import Homework08 from "./homeworks/Homework08/Homework08";
 // import Homework09 from "homeworks/Homework09/Homework09";
 // import Homewrok11 from "homeworks/Homework11/Homewrok11";
+import Homework13 from "homeworks/Homework13/Homework13";
 
 //comsultations
 // import Consultation04 from "./consultations/Consultation04/Consultation04";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/clients/otto" element={<Otto />} />
           <Route path="/clients/zalando" element={<Zalando />} />
           <Route path="/lesson13" element={<Lesson13 />} />
+          <Route path="/homework13" element={<Homework13 />} />
           <Route path="*" element="Page not found" />
         </Routes>
       </Layout>
